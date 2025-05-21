@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sate Padang Jam Gadang</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- WhatsApp Icon Link -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<style>
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #f1a408;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo img {
+    width: 120px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+section {
+    padding: 40px;
+}
+
+.intro {
+    background-color: #f1a408;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro h1 {
+    font-size: 3em;
+}
+
+.menu {
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.menu h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 1.5em;
+    color: #f1a408;
+}
+
+.contact {
+    background-color: #fff;
+    text-align: center;
+}
+
+.whatsapp-icon {
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.whatsapp-icon:hover {
+    background-color: #128C7E;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.cart {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart ul li {
+    margin: 10px 0;
+}
+
+.cart button {
+    background-color: #f1a408;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart button:hover {
+    background-color: #e09e06;
+}
+
+
+</style>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sate Padang Jam Gadang</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Sate Padang Jam Gadang Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#sate">Sate</a></li>
+                <li><a href="#cemilan">Cemilan</a></li>
+                <li><a href="#minuman">Minuman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#cart">Keranjang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Selamat Datang di Sate Padang Jam Gadang</h1>
+            <p>Menikmati Sate Padang dengan cita rasa asli, siap memanjakan lidah Anda!</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+   <section id="sate" class="menu">
+        <h2>Sate</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="daging_sapi.jpg" alt="Daging Sapi">
+                <h3>Daging Sapi</h3>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart('Daging Sapi', 15000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="lidah_sapi.jpg" alt="Lidah Sapi">
+                <h3>Lidah Sapi</h3>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart('Lidah Sapi', 15000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="daging_ayam.jpg" alt="Daging Ayam">
+                <h3>Daging Ayam</h3>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart('Daging Ayam', 15000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="cemilan" class="menu">
+        <h2>Cemilan</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="kerupuk_jangek.jpg" alt="Kerupuk Jangek">
+                <h3>Kerupuk Jangek</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Kerupuk Jangek', 5000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="keripik_singkong.jpg" alt="Keripik Singkong">
+                <h3>Keripik Singkong</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Keripik Singkong', 5000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="telur_asin.jpg" alt="Telur Asin">
+                <h3>Telur Asin</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Telur Asin', 5000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="minuman" class="menu">
+        <h2>Minuman</h2>
+        <div class="menu-list">
+            <div class="menu-item">
+                <img src="teh_telur.jpg" alt="Teh Telur">
+                <h3>Teh Telur</h3>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="addToCart('Teh Telur', 15000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="teh.jpg" alt="Teh">
+                <h3>Teh</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Teh', 5000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="kopi.jpg" alt="Kopi">
+                <h3>Kopi</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Kopi', 5000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <img src="minuman_botol.jpg" alt="Minuman Botol">
+                <h3>Minuman Botol</h3>
+                <p>Harga: Rp 5.000</p>
+                <button onclick="addToCart('Minuman Botol', 5000)">Tambah ke Keranjang</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Keranjang Section -->
+    <section id="cart" class="cart">
+        <h2>Keranjang Belanja</h2>
+        <ul id="cart-items"></ul>
+        <p>Total Harga: Rp <span id="total-price">0</span></p>
+        <button onclick="clearCart()">Kosongkan Keranjang</button>
+    </section>
+<section id="contact" class="contact">
+        <h2>Kontak Kami</h2>
+        <p>Hubungi kami di nomor 0896-3036-8693 atau melalui email di <a href="mailto:satepadangjamgadangmay@gmail.com">satepadangjamgadangmay@gmail.com</a></p>
+        <!-- WhatsApp Icon -->
+        <p>Atau chat kami di WhatsApp:</p>
+        <a href="https://wa.me/6289630368693" class="whatsapp-icon" target="_blank">
+            <i class="fab fa-whatsapp"></i> Chat via WhatsApp
+        </a>
+    </section>
+    <footer>
+        <p>&copy; 2025 Sate Padang Jam Gadang</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
